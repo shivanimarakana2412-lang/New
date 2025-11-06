@@ -1,14 +1,19 @@
-# class Animal:  
-#     def sound(self):
-#         return "Makes a sound"
+class Animal:  
+    def sound(self):
+        return "Makes a sound"
 
-# class Dog(Animal):  
-#     def bark(self):
-#         return "Barks"
+class Dog(Animal):  
+    def bark(self):
+        return "Barks"
 
-# dog = Dog()
-# print(dog.sound())  # Output: Makes a sound
-# print(dog.bark())   # Output: Barks
+dog = Dog()
+print(dog.sound())  # Output: Makes a sound
+print(dog.bark())   # Output: Barks
+
+
+
+
+
 
 
 class Car():
