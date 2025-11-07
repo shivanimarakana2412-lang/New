@@ -54,10 +54,10 @@ while True:
         ch = int(input("Enter your choice: "))
         if ch == 1:
             for obj in toyatocars:
-                obj.getdata()
+                tobj.getdata()
         elif ch == 2:
             for obj in mahindracars:
-                obj.getdata() 
+                mobj.getdata() 
                 
         else:
             print("Invalid choice") 
