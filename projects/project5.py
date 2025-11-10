@@ -9,6 +9,8 @@ class Employee():
         print("\nName: " ,self.name)
         print("Age: " ,self.age) 
         print("ID: " ,self.emp_id)
+        
+        
         print("Salary: ",self.salary)
         
 class Manager(Employee):
