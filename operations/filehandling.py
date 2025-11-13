@@ -1,7 +1,7 @@
 print("\nWelcome to file handling\n")
 
 while True:
-    print("Enter 1 to creat file ")
+    print("\nEnter 1 to creat file ")
     print("Enter 2 to read file ")
     print("Enter 3 to write file ")
     print("Enter 4 to append file ")
@@ -31,11 +31,10 @@ while True:
                       
     elif choice == 4:
         file_name = str(input("Enter file name to append: "))
-        
-        with open (file_name , "a") as file:
-            data2 = str("Enter data to append: ") # for append we need to write in text file
-            
-            file.write("\n "+ data2)
+
+        with open(file_name,"a") as file:
+            data2=input("Enter data to add in your file to append: ")
+            file.write("\n"+ data2)
   
     elif choice == 5:
         print("Exiting To filehandling !")
