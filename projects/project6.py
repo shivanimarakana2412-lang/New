@@ -8,17 +8,17 @@ class AllData:
     def AddEntry(self, text):
         with open(self.filename, "a") as file:
             file.write(text + "\n")
-            print("\nEntry Added Successfully")
+            print("\nEntry Added Successfully!\n")
 
     def ViewEntry(self):
         try:
             with open(self.filename, "r") as file:
                 read = file.read()
-                print("\n-----Your Journal entries-----\n")
-                print(now)
+                print("\nYour Journal entries\n------------------------------------\n")
+                print(now ,"\n")
                 print(read)
                 print(now)
-                print("Had a great session on OOP")
+                print("Had a great session on OOP\n")
                 
         except FileNotFoundError:
             print("File not found")
@@ -35,32 +35,32 @@ class AllData:
  
 
 Adata = AllData("journal.txt")
-
+print("\nWelcome to the Journal Manager!")
+print("Please select an option:\n")
 while True:
-    print("\nWelcome to the Journal Manager!\n")
     print("1. Add new entry")
     print("2. View entries")
     print("3. Search entry")
     print("4. Delete entries")
-    print("5. Exit")
+    print("5. Exit\n")
 
     try:
-        choice = int(input("Enter your choice: "))
+        choice = int(input("User Input:\n"))
     except ValueError:
         print("Please enter a valid number.")
         continue
 
     if choice == 1:
-        entry = input("\nEnter your journal entry: ")
+        entry = input("\nEnter your journal entry: \n")
         Adata.AddEntry(entry)
     
     elif choice == 2:
         Adata.ViewEntry()
     
     elif choice == 3:
-        keyword=input("Enter a keyword for search:")
+        keyword=input("Enter a keyword for search: ")
         print("Show Matching Entries:\n ------------------------------------\n")
-        print(now)
+        print(now , "\n")
         Adata.SearchEntry()
     
     elif choice == 4:
