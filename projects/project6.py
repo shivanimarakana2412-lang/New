@@ -29,6 +29,7 @@ class AllData:
             for  linenum,line in enumerate(line):
                if keyword in line:
                    print(linenum,"          " , line)
+                   
     def DeleteEntry(self):
         with open(self.filename,"w")as file:
              file.write("")
