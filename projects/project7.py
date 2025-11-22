@@ -13,6 +13,16 @@ def stopwatch():
     seconds = total_time.total_seconds()
     print(f"\nElapsed time: {round(seconds, 2)} seconds")
 
+def countdown_timer():
+    sec = int(input("Enter seconds for countdown: "))
+    while sec > 0:
+        mins, secs = divmod(sec, 60)
+        timer = f"{mins:02}:{secs:02}"
+        print(timer, end="\r")
+        time.sleep(1)
+        sec -= 1
+    print("Time's up!")
+
 class AllData:
     def __init__(self, filename):
         self.filename = filename
@@ -69,7 +79,8 @@ while True:
             print("2. Calcuate difference between Two Date/Time")
             print("3. Formate date into custom formate")
             print("4. Stopwatch")
-            print("5. Back to Main Menu\n")
+            print("5. Countdown")
+            print("6. Back to Main Menu\n")
             
             ch = int(input("Enter a number: "))
             
@@ -101,26 +112,31 @@ while True:
             elif ch == 4 :
                 
                 stopwatch()
+            
+            elif ch == 5 :
+                
+                countdown_timer()        
                     
-            elif ch == 5:
+            elif ch == 6:
                 print("Back to main menu")
                 break
 
     elif choice == 2:
         while True:
             print("\nMathematical operations\n")
-            print("1. Calcuate Factorial")
+            print("1. Calculate Factorial")
             print("2. Solve Compound Intrest")
-            print("3. Back to Main Menu\n ")
+            print("3. Trigonometric Calculation")
+            print("4. Back to Main Menu\n ")
             
             ch = int(input("Enter a number: "))
             
-            if ch == 1:
+            if ch == 1 :
                 fact = int(input("Enter a number to get factorial: "))
                 print(math.factorial(fact))
                 print("\n================================\n")
                 
-            elif ch == 2:
+            elif ch == 2 :
                 amount = int(input("Enter principal amount: "))
                 intrest = int(input("Enter rate of intrest(in %): "))
                 time = int(input("Enter a time (in year): "))
@@ -128,6 +144,12 @@ while True:
                 compond_interst = amount * intrest * time / 100
                 
                 print(compond_interst)                
+           
+            elif ch == 3 :
+                #sine = int(input("Enter the number (30 , 45 , 60 , 90):"))
+                print(math.sin(math.radians(30)))  # Output: 0.5
+                print(math.cos(math.radians(60)))  # Output: 0.5
+                print(math.tan(math.radians(45)))  # Output: 1.0
             
             else:
                 print("Back to main menu")
