@@ -32,6 +32,7 @@ class DataAnalytics:
         print(self.array)
 
     # ---------- Mathematical Operations + Indexing / Slicing ----------
+ 
     def math_operations(self):
         while True:
             if self.array is None:
@@ -156,6 +157,7 @@ class DataAnalytics:
                 print("Invalid choice!")
 
     # ---------- Aggregating & Statistics ----------
+   
     def statistics(self):
         while True:
             if self.array is None:
