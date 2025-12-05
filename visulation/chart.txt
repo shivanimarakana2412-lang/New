@@ -1,0 +1,24 @@
+
+# Bar chart - A bar chart is a type of graph used to visually compare quantities or values across different categories.-->bar - method , for horizonatal - barh
+
+
+# Line chart - it is use for growth --> method - plot 
+
+
+# Scatter chart - relationship between two numerical variables. --> method - scatter 
+
+
+# pie chart - A pie chart is a circular graph used to show how a whole data is divided into parts --> method - pie
+
+
+# histogram chart - A histogram is a type of chart used to show the distribution of numerical data --> method - hist
+
+
+# stack chart - different parts contribute to a total over categories. --> method - bar and plot
+
+
+# stacked area chart - A stacked area chart is a type of graph used to show how different data groups change over time and how they add up to a total. --> method - stackplot
+
+
+# subplot - A subplot is a smaller graph that is displayed inside the same figure along with other graphs --> methods - all charts here
+
